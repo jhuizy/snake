@@ -50,7 +50,7 @@ updateGame delta game@(Game snake fruit d) = do
         collision = head (unSnake snake) == unFruit fruit
 
     moveSnake :: Direction -> Snake -> Snake
-    moveSnake d snake@(Snake sps) = Snake $ updatedHead : (if collision then sps else init sps)  
+    moveSnake d (Snake sps) = Snake $ updatedHead : (if collision then sps else init sps)  
       where
         updatedHead = updateSnakeHead d (head sps)
         collision = updatedHead == unFruit fruit
