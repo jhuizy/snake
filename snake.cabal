@@ -1,0 +1,32 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 386c3695d6196dd6e1114da00b80380ba7d399c7b6adb27f3b44fc5544399afc
+
+name:           snake
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/githubuser/snake#readme
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2019 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable snake
+  main-is: Main.hs
+  other-modules:
+      Paths_snake
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , gloss
+    , random
+  default-language: Haskell2010
